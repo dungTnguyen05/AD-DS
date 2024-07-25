@@ -30,14 +30,16 @@ int main() {
         players[i] = new Computer();
     }
 
-    for (int i = 0; i < numHumans; i++) {
+    for (int i = 0; i < numHumans + numComputers - 1; i++) {
         for (int j = i + 1; j < numHumans + numComputers; j++) {
-            if (ref -> refGame(players[i], players[j]) == nullptr) {
+            Player* winner = ref -> refGame(players[i], players[j]);
+            
+            if (winner == nullptr) {
                 cout << "It's a Tie" << endl;
             }
 
             else {
-                cout << ref -> refGame(players[i], players[j]) -> getName() << " Wins" << endl;
+                cout << winner -> getName() << " Wins" << endl;
             }
         }
     }

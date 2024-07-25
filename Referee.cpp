@@ -4,22 +4,22 @@ Referee::Referee() {
 }   
 
 Player* Referee::refGame(Player* player1, Player* player2) {
-    char p1Move = player1 -> getMove();
-    char p2Move = player2 -> getMove();
+    //char p1Move = player1 -> makeMove();
+    //char p2Move = player2 -> makeMove();
 
-    if (p1Move == p2Move) {
+    if (player1 -> makeMove() == player2 -> makeMove()) {
         return nullptr;
     }
 
-    if (p1Move == 'R' && p2Move == 'P') {
+    if (player1 -> makeMove() == 'R' && player2 -> makeMove() == 'P') {
         return player2;
     }
 
-    if (p1Move == 'P' && p2Move == 'S') {
+    if (player1 -> makeMove() == 'P' && player2 -> makeMove() == 'S') {
         return player2;
     }
 
-    if (p1Move == 'S' && p2Move == 'R') {
+    if (player1 -> makeMove() == 'S' && player2 -> makeMove() == 'R') {
         return player2;
     }
 
