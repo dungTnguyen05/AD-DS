@@ -9,6 +9,10 @@ char Computer::makeMove() {
     return move;
 }   
 
+char Computer::getMove() {
+    return move;
+}
+
 string Computer::getName() {
     return name;
 }   

@@ -10,6 +10,10 @@ char Human::makeMove() {
     return move;
 }
 
+char Human::getMove() {
+    return move;
+}
+
 string Human::getName() {
     return name;
 }
