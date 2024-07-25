@@ -41,4 +41,11 @@ int main() {
             }
         }
     }
+
+    for (int i = 0; i < numHumans + numComputers; i++) {
+        delete players[i];
+    }
+
+    delete[] players;
+    delete ref;
 }
