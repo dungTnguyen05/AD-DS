@@ -6,7 +6,7 @@
 
 class Computer: public Player {
     public:
-        Computer(string name = "Computer");
+        Computer();
         string getName();
         Move* makeMove();
 };

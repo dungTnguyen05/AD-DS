@@ -1,8 +1,8 @@
-#include "Player.cpp"
-#include "Human.cpp"
-#include "Computer.cpp"
-#include "Move.cpp"
-#include "Referee.cpp"
+#include "Player.h"
+#include "Human.h"
+#include "Computer.h"
+#include "Move.h"
+#include "Referee.h"
 
 int main() {
     Player* player1 = new Human("Dung");
