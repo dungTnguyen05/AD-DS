@@ -1,0 +1,6 @@
+#include "Player.cpp"
+#include "Human.cpp"
+#include "Computer.cpp"
+#include "Move.cpp"
+#include "Referee.cpp"
+#include "Rule.cpp"
