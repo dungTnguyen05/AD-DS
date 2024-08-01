@@ -5,11 +5,9 @@
 using namespace std;
 
 class Move {
-    private:
-        string move;
     public:
-        Move(string move);
-        string getMove();
+        virtual bool beat(Move* move) = 0;
+        virtual string getName() = 0;
 };
 
 #endif

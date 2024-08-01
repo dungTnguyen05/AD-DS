@@ -1,14 +1,14 @@
 #include "Referee.h"
 
 Player* Referee::refGame(Player* player1, Player* player2) {
-    Move* m1 = player1 -> makeMove();
-    Move* m2 = player2 -> makeMove();
+    Move* move1 = player1 -> makeMove();
+    Move* move2 = player2 -> makeMove();
 
-    if (rule -> beat(m1, m2) == m1) {
+    if (move1 -> beat(move2)) {
         return player1;
     }
 
-    if (rule -> beat(m1, m2) == m2) {
+    if (move2 -> beat(move1)) {
         return player2;
     }
 

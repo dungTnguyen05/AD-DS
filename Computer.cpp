@@ -5,6 +5,6 @@ string Computer::getName() {
 }
 
 Move* Computer::makeMove() {
-    this -> move = new Move("Rock");
+    this -> move = new Rock();
     return move;
 }

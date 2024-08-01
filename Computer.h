@@ -2,6 +2,7 @@
 #define COMPUTER_H
 
 #include "Player.h"
+#include "Rock.h"
 
 class Computer: public Player {
     public:
