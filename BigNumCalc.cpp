@@ -130,7 +130,7 @@ std::list<int> BigNumCalc::mul(std::list<int> num1, std::list<int> num2) {
         res.push_front(carry);
     }
 
-    while (res.front() == 0 || res.size() > 1) {
+    while (res.front() == 0 && res.size() > 1) {
         res.pop_front();
     }
 
