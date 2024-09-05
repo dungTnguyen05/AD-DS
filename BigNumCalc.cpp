@@ -122,12 +122,12 @@ std::list<int> BigNumCalc::mul(std::list<int> num1, std::list<int> num2) {
 
     for (auto it1 = num1.rbegin(); it1 != num1.rend(); it1++) {
         int prod = (*it1) * digit2 + carry;
-        res.push_back(prod % 10);
+        res.push_front(prod % 10);
         carry = prod/10;
     }
 
     if (carry > 0) {
-        res.push_back(carry);
+        res.push_front(carry);
     }
 
     while (res.front() == 0 || res.size() > 1) {
