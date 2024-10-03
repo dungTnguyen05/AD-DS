@@ -2,6 +2,7 @@
 #define AUTOCOMPLETE_H
 
 #include "TrieNode.h"
+#include <string>
 #include <vector>
 
 class Autocomplete {

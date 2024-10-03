@@ -2,6 +2,7 @@
 #define PREFIXMATCHER_H
 
 #include "PrefixNode.h"
+#include <string>
 
 class PrefixMatcher {
     private:
